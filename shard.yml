@@ -1,0 +1,10 @@
+name: gradientty
+version: 1.0.0
+description: A Simple, customizable and lightweight gradient text to console.
+
+authors:
+  - GalactHD <139361517+GalactHD@users.noreply.github.com>
+
+crystal: '>= 1.17.1'
+
+license: MIT
