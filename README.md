@@ -46,8 +46,6 @@ puts Gradientty.vice("Hello Vice!")
 # Custom gradient: any colors you want
 custom = Gradientty.gradient(["#ff69b4", "#8a2be2", "#1e90ff"])
 puts custom.multiline("Hello\nCustom Gradient!", true) # continuous across lines
-
-puts Gradientty.vice("Hello Vice!") # Vice-style gradient
 ```
 
 ## License
