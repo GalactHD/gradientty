@@ -6,11 +6,13 @@ on:
     paths-ignore:
       - 'README.md'
       - '**/*.md'
+      - '**/*.png'
   pull_request:
     branches: [master]
     paths-ignore:
       - 'README.md'
       - '**/*.md'
+      - '**/*.png'
 
 jobs:
   build:
