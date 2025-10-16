@@ -2,17 +2,25 @@ name: CI
 
 on:
   push:
+    branches: [master]
+    paths-ignore:
+      - 'README.md'
+      - '**/*.md'
   pull_request:
     branches: [master]
-    tags-ignore:
-      - '*'
+    paths-ignore:
+      - 'README.md'
+      - '**/*.md'
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Download source
         uses: actions/checkout@v2
+
       - name: Install Crystal
         uses: crystal-lang/install-crystal@v1
+
       - name: Run tests
         run: crystal spec
